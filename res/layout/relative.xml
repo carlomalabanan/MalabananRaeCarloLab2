@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/img2" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="University of the Philippines"
+        android:textSize="29sp" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+
+        android:layout_marginLeft="16dp"
+        android:text="Location: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginLeft="16dp"
+        android:text="Distance from UST:"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="16dp"
+        android:text="Back"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignTop="@+id/back"
+        android:text="Next"
+        android:textSize="20sp" />
+</RelativeLayout>
